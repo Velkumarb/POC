@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html ng-app="app">  
+<head>  
+    <meta charset="utf 8">
+    <title>Ancent Logistics Application</title>     
+</head>  
+<body>
+<h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+
+<div ng-controller="HelloWorldCtrl">
+    Input field: 
+    
+    <input type="text" 
+        name="mytext" ng-model="nameText">
+    <br>
+    <br>
+{{nameText}}
+    
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+<script>  
+    angular.module("app", []).controller("HelloWorldCtrl", function($scope) {  
+    $scope.message="Hello Datasirpi"
+    $scope.nameText = '';
+            
+    } )
+</script> 
+
+</body>  
+</html>
